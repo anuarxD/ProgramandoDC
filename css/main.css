@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+html {
+	font-size: 16px;
+}
+
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+
+.icon-facebook {
+	background: #2E406E;
+}
+
+.icon-twitter {
+	background: #339DC5;
+}
+
+.icon-youtube {
+	background: #E83028;
+}
+
+.icon-instagram {
+	background: #3F60A5;
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#inicio{
+	height: 100vh;
+}
+#inicio p{
+	font-size: 2.5em;
+	color: lightgreen;
+	font-family: 'Roboto Slab', serif;
+}
+
+
+#Proyectos figcaption{
+	color: lightgreen;
+	font-size: 1.5em;
+}
+
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+#skill  {
+	font-size: 9em;
+} 
+
+.fa-html5{
+	color: #dd4b25;
+}
+.fa-css3-alt{
+	color: #016eae;
+}
+
+.fa-js{
+ color:#f7df1e
+}
+
+.fa-php{
+ color: #777bb3;
+}
+
+.fa-github-alt{
+ color:#c9bff7
+}
+
+
+
+
+
+
