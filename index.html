@@ -152,22 +152,29 @@
                 </div>
                 <div class="col">
                 <h3>Contacto</h3>
-                <form action="https://formspree.io/f/1602308427873254667" method="POST">
-                    <div class="form-floating mb-3">
-                        <input type="nombre" class="form-control" id="floatingInput" placeholder="Anuar Rodríguez">
-                        <label for="floatingInput">Nombre</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Mensaje</label>
-                      </div>
-                      <br>
-                      <button type="submit" class="btn ms btn-primary">Enviar</button>
-                </form>
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/xleovege" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <div class="form-floating mb-3">
+                                <label for="full-name">Nombre:</label>
+                                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label for="email-address">Correo Electronico:</label>
+                                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
+                                    required="">
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label for="message">Mensaje</label>
+                                <textarea rows="5" name="message" id="message" placeholder="Mensaje"
+                                    required=""></textarea>
+                            </div>
+
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        </fieldset>
+                        <input type="submit" value="Enviar">
+                    </form>
                 </div>
                 
             </div>
